@@ -201,7 +201,7 @@ header {
 
 .btn-secondary:hover {
     background-color: #ffde24;
-    color: #ffffff;
+    color: #000;
     font-weight: bold;
 }
 
