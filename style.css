@@ -112,7 +112,8 @@ header {
   justify-content: center;
   align-content: center;
   margin-bottom: 60px;
-  width: 1300px;
+  width: 90%;
+  max-width: 1300px;
 }
 
 .about h2 {
@@ -133,7 +134,8 @@ header {
   align-self: center;
   justify-content: center;
   display: flex;
-  width: 1300px;
+  width: 90%;
+  max-width: 1300px;
 
 }
 
@@ -365,20 +367,36 @@ footer {
     color: #ffd900;
 }
 
+@media (max-width: 992px) {
+  .hero-section h1 {
+      font-size: 40px;
+  }
+  .hero-section p {
+      font-size: 18px;
+  }
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-links {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .nav-links li {
-        margin: 10px 0;
-    }
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero-section {
+      padding: 40px 10px;
+  }
+  .about .container {
+      width: 100%;
+  }
+  .member-grid {
+      display: flex;
+      flex-direction: column;
+  }
+  .report-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+      font-size: 30px;
+  }
+  .hero-section p {
+      font-size: 16px;
+  }
 }
