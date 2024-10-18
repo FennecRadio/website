@@ -111,6 +111,7 @@ header {
 .about .container {
   justify-content: center;
   align-content: center;
+  justify-self: center;
   margin-bottom: 60px;
   width: 90%;
   max-width: 1300px;
@@ -130,14 +131,16 @@ header {
 }
 
 .member-grid {
-  justify-self: center;
-  align-self: center;
-  justify-content: center;
   display: flex;
-  width: 90%;
-  max-width: 1300px;
-
+  flex-wrap: wrap;
+  justify-content: center; /* This will center the grid horizontally */
+  align-items: center; /* Optional: To vertically align the items */
+  gap: 10px; /* Adjust the gap between member cards if needed */
+  width: 100%; /* Ensure the grid takes the full width of its container */
+  max-width: 1200px; /* Keep a max-width for larger screens */
+  margin: 0 auto; /* Center the grid within its container */
 }
+
 
 .member-grid a {
   text-decoration: none;
@@ -150,7 +153,7 @@ header {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 250px;
-  width: 210px;
+  width: 180px;
   margin: 10px;
 }
 
@@ -390,6 +393,10 @@ footer {
   .report-grid {
       grid-template-columns: 1fr;
   }
+
+  .member-card {
+    width: 45%; /* Take almost half of the screen on medium screens */
+}
 }
 
 @media (max-width: 480px) {
@@ -399,4 +406,6 @@ footer {
   .hero-section p {
       font-size: 16px;
   }
+
+
 }
